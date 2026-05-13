@@ -1,0 +1,40 @@
+[
+    {
+        "nome": "Calebe",
+        "idade": 16,
+        "cidade": "Palmas",
+        "apelido": "Orca"
+        
+
+    },
+
+    {
+        "nome": "Paulo",
+        "idade": 15,
+        "cidade": "Foz",
+        "apelido": "Jacare"
+        
+
+    },
+
+{
+        "nome": "Luiz",
+        "idade": 14,
+        "cidade": "Mar",
+        "apelido": "Tubarao"
+        
+
+    },
+
+
+
+{
+        "nome": "Bichos da Agua",
+        "idade": 2,
+        "cidade": "Oceano",
+        "apelido": "Bichos aquaticos criminais"
+        
+
+    }
+
+]
