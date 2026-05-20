@@ -1,27 +1,24 @@
-function info() {
+function cafe(){
     fetch('dados.json')
-        .then(responde => responde.json())
-        .then(dadinho => {
-            tablet = document.getElementById('destino');
+         .then(response => response.json())
+         .then(dadinho=>{
+             tablet = document.getElementById('destino');
 
-            dadinho.forEach(pessoa => {
+             dadinho.forEach(pessoa => {
                 let linha = document.createElement('tr');
 
                 linha.innerHTML = `
                 <td> ${pessoa.nome} </td>
                 <td> ${pessoa.idade} </td>
-                <td> ${pessoa.altura} </td>
-                <td> ${pessoa.apelido} </td>
-                <td> <button type="button" onclick="info()">delete</button>
-                `
-                tablet.appendChild(linha);
+                <td> ${pessoa.cidade} </td>
+                <td> ${pessoa.apelido} <td>
+                <button type="button" onclick="apagarLinha(this)">deletar</button>
+                `;
 
-            });
-            
-        })
+            tablet.appendChild(linha);
+        });
+    })
 }
-
-function infor(botao) {
-    botao.closet('tr').remove();
-
+function apagarLinha(botao) {
+    botao.closest('tr').remove();
 }
